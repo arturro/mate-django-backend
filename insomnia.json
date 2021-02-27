@@ -1,0 +1,270 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-02-27T21:06:24.709Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.2",
+  "resources": [
+    {
+      "_id": "req_f1fb1546b1694d13ba495e60341199d2",
+      "parentId": "fld_ec71c8802f134e05a2316f8899c981f7",
+      "modified": 1614459115442,
+      "created": 1614458617345,
+      "url": "{{ _.host }}/api/v1/category/",
+      "name": "/api/v1/category/",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1614459105373,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_ec71c8802f134e05a2316f8899c981f7",
+      "parentId": "wrk_aef3a7aab43546ad828dd9cdbb8fb54f",
+      "modified": 1614459105323,
+      "created": 1614459105323,
+      "name": "category",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614459105323,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_aef3a7aab43546ad828dd9cdbb8fb54f",
+      "parentId": null,
+      "modified": 1614450989673,
+      "created": 1614450989674,
+      "name": "mate-django-backend.herokuapp.com",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_dd04595eb36f45378a2f9e6cc4a4993b",
+      "parentId": "fld_ec71c8802f134e05a2316f8899c981f7",
+      "modified": 1614459352104,
+      "created": 1614458651774,
+      "url": "{{ _.host }}/api/v1/category/",
+      "name": "/api/v1/category/",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"name\": \"Owoce morza\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ef000300fadc420692fe8a067587cbc9"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614459105348,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9bc3f6d7bf8345a4bf9abfbc9edb3ddc",
+      "parentId": "fld_ec71c8802f134e05a2316f8899c981f7",
+      "modified": 1614459788798,
+      "created": 1614459282742,
+      "url": "{{ _.host }}/api/v1/category/{% prompt 'ID', 'Podaj ID rekordu do usunięcia', '', '', false, true %}/",
+      "name": "/api/v1/category/",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"pk\": 1,\n  \"name\": \"{% prompt 'Name', 'Podaj nową nazwę', 'zmieniona', '', false, true %}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ef000300fadc420692fe8a067587cbc9"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614459105335.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_45d48a6272e341b4aedbc49275297534",
+      "parentId": "fld_ec71c8802f134e05a2316f8899c981f7",
+      "modified": 1614459814797,
+      "created": 1614458716716,
+      "url": "{{ _.host }}/api/v1/category/{% prompt 'ID', 'Podaj ID rekordu do usunięcia', '', '', false, true %}/",
+      "name": "/api/v1/category/",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ef000300fadc420692fe8a067587cbc9"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614459105323,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b900cfcebe764698813c554664201c63",
+      "parentId": "fld_ec71c8802f134e05a2316f8899c981f7",
+      "modified": 1614459571342,
+      "created": 1614459158485,
+      "url": "{{ _.host }}/api/v1/category/{% prompt 'ID', 'Podaj ID rekordu do usunięcia', '', '', false, true %}/",
+      "name": "/api/v1/category/",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"name\": \"{% prompt 'Name', 'Podaj nową nazwę', 'zmieniona', '', false, true %}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_ef000300fadc420692fe8a067587cbc9"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614105701935.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_fb86fb58b093ca50f396a19e4c3436e16bc5a185",
+      "parentId": "wrk_aef3a7aab43546ad828dd9cdbb8fb54f",
+      "modified": 1614450989803,
+      "created": 1614450989803,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1614450989803,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_fb86fb58b093ca50f396a19e4c3436e16bc5a185",
+      "parentId": "wrk_aef3a7aab43546ad828dd9cdbb8fb54f",
+      "modified": 1614450989805,
+      "created": 1614450989805,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_560211d8c0d94292a4e46856f6b45c80",
+      "parentId": "wrk_aef3a7aab43546ad828dd9cdbb8fb54f",
+      "modified": 1614450989697,
+      "created": 1614450989697,
+      "fileName": "mate-django-backend.herokuapp.com",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_49aa34d1624045e8ad6db877a987bccd",
+      "parentId": "env_fb86fb58b093ca50f396a19e4c3436e16bc5a185",
+      "modified": 1614458550797,
+      "created": 1614458272750,
+      "name": "127.0.0.8000",
+      "data": {
+        "host": "http://127.0.0.1:8000"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "host"
+        ]
+      },
+      "color": "#4000ff",
+      "isPrivate": false,
+      "metaSortKey": 1614458272750,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_eba1919e28754b3f81744124cfc40d4e",
+      "parentId": "env_fb86fb58b093ca50f396a19e4c3436e16bc5a185",
+      "modified": 1614458537219,
+      "created": 1614458441357,
+      "name": "127.0.0.5000",
+      "data": {
+        "host": "http://127.0.0.1:5000"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "host"
+        ]
+      },
+      "color": "#ff00ff",
+      "isPrivate": false,
+      "metaSortKey": 1614458272800,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_e830a8051e5e48189102c812b94088f8",
+      "parentId": "env_fb86fb58b093ca50f396a19e4c3436e16bc5a185",
+      "modified": 1614458513883,
+      "created": 1614458456671,
+      "name": "heroku",
+      "data": {
+        "host": "https://mate-django-backend.herokuapp.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "host"
+        ]
+      },
+      "color": "#ff0000",
+      "isPrivate": false,
+      "metaSortKey": 1614458272850,
+      "_type": "environment"
+    }
+  ]
+}

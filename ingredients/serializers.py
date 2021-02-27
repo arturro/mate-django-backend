@@ -6,10 +6,10 @@ from .models import Category, Ingredient
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('name',)
+        fields = ('pk', 'name')
 
 
 class IngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ingredient
-        fields = ('category', 'name')
+        fields = ('pk', 'category', 'name')
