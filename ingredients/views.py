@@ -4,6 +4,7 @@ from . import models
 from . import serializers
 
 
+# @permission_classes([IsAuthenticated])
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = models.Category.objects.all()
     serializer_class = serializers.CategorySerializer
